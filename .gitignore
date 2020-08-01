@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/WBSProekt/obj
+/.vs/WBSProekt/v15
+/WBSProekt/bin/Debug/netcoreapp2.1
