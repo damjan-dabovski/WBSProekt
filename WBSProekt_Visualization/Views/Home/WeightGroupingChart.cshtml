@@ -1,0 +1,14 @@
+﻿@model WBSProekt_Visualization.Models.ViewModels.GroupedWeightViewModel
+
+@{
+    var chart = new Chart(1200, 800)
+        .AddTitle("Grouping by Average Weight")
+        .AddSeries(
+            name: "Game",
+            xValue: Model.Groupings.Keys,
+            xField: "Name",
+            yValues: Model.Groupings.Values.ToArray(),
+            chartType: "Pie"
+        )
+        .Write();
+}

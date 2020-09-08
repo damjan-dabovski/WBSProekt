@@ -5,3 +5,7 @@
 /WBSProekt/obj
 /.vs/WBSProekt/v15
 /WBSProekt/bin/Debug/netcoreapp2.1
+/.vs
+/packages
+/WBSProekt_Visualization/bin
+/WBSProekt_Visualization/obj/Debug

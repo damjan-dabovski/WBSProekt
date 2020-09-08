@@ -1,0 +1,13 @@
+﻿@model IEnumerable<WBSProekt_Visualization.Models.ViewModels.RatingWeightViewModel>
+
+@{
+    var chart = new Chart(1200, 800)
+        .AddTitle("Rating to Weight ratio")
+        .AddSeries(
+            name: "Game",
+            xValue: Model.Select(item => item.Title).ToArray(),
+            xField: "Name",
+            yValues: Model.Select(item => item.RatingWeightRatio).ToArray()
+        )
+        .Write();
+}
